@@ -1,0 +1,15 @@
+[font]
+normal = { family = "Iosevka Nerd Font Mono" }
+size = 12
+
+
+[window.dimensions]
+columns = 120
+lines = 30
+
+
+[keyboard]
+bindings = [{ key = "N", mods = "Control|Shift", action = "CreateNewWindow" }]
+
+[general]
+import = ["~/.config/alacritty/dracula.toml"]
