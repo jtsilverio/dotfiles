@@ -1,4 +1,4 @@
-.PHONY: stow unstow vscode unvscode
+.PHONY: stow unstow vscode unvscode bootstrap
 
 VSCODE_DIR := $(HOME)/Library/Application Support/Code/User
 
@@ -16,3 +16,10 @@ vscode:
 
 unvscode:
 	rm -f "$(VSCODE_DIR)/settings.json" "$(VSCODE_DIR)/keybindings.json"
+
+bootstrap:
+	brew install fzf fd
+	git clone https://github.com/zsh-users/zsh-autosuggestions \
+		$${ZSH_CUSTOM:-$$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions 2>/dev/null || true
+	git clone https://github.com/zsh-users/zsh-syntax-highlighting \
+		$${ZSH_CUSTOM:-$$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting 2>/dev/null || true

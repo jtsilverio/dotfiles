@@ -1,14 +1,11 @@
 # USER CONFIGS
 alias activate="source .venv/bin/activate"
 
-# LOCAL ENV
-[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
-
 # ZSH
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="minimal"
-plugins=(git python docker pip zsh-autosuggestions zsh-syntax-highlighting copypath copyfile)
+plugins=(git python docker zsh-autosuggestions zsh-syntax-highlighting copypath)
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
@@ -38,3 +35,10 @@ export PATH="$PATH:$HOME/.local/bin"
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init - zsh)"
+
+# LOCAL ENV
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+
+# FZF
+eval "$(fzf --zsh)"
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
