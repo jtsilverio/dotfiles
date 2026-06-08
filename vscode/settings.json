@@ -1,0 +1,223 @@
+{
+    "workbench.editor.restoreViewState": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.editor.labelFormat": "short",
+    "workbench.editor.editorActionsLocation": "default",
+    "workbench.editor.tabActionLocation": "right",
+    "workbench.activityBar.location": "top",
+    "window.customTitleBarVisibility": "auto",
+    "window.restoreWindows": "none",
+    "window.titleBarStyle": "custom",
+    "editor.minimap.enabled": false,
+    "editor.renderLineHighlight": "all",
+    "editor.rulers": [
+        80
+    ],
+    "explorer.confirmDragAndDrop": false,
+    "explorer.compactFolders": false,
+    "explorer.fileNesting.enabled": true,
+    "extensions.ignoreRecommendations": true,
+    "terminal.integrated.stickyScroll.enabled": false,
+    "terminal.integrated.enablePersistentSessions": false,
+    "breadcrumbs.enabled": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "git.confirmSync": false,
+    "json.format.keepLines": false,
+    "keyboard.dispatch": "keyCode", // Fix VSCode keybinding issues in ThinkPad Pt-Br keyboard
+    "explorer.fileNesting.patterns": {
+        "*.ts": "${capture}.js",
+        "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+        "*.jsx": "${capture}.js",
+        "*.tsx": "${capture}.ts",
+        "tsconfig.json": "tsconfig.*.json",
+        "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+        "Pipfile": "Pipfile*",
+        "*.sqlite": "${capture}.${extname}-*",
+        "*.db": "${capture}.${extname}-*",
+        "*.sqlite3": "${capture}.${extname}-*",
+        "*.db3": "${capture}.${extname}-*",
+        "*.sdb": "${capture}.${extname}-*",
+        "*.s3db": "${capture}.${extname}-*"
+    },
+    //////////////////////
+    // ICONS & THEMES
+    //////////////////////
+    "workbench.colorTheme": "Dracula Theme",
+    "material-icon-theme.files.color": "#90a4ae",
+    "material-icon-theme.folders.color": "#90a4ae",
+    "material-icon-theme.saturation": 0.8,
+    //////////////////////
+    // EDITOR FONTS
+    //////////////////////
+    "editor.fontSize": 18,
+    "editor.fontFamily": "Iosevka Nerd Font Mono, JetBrains Mono",
+    "editor.fontLigatures": false,
+    "workbench.fontAliasing": "antialiased",
+    "editor.lineHeight": 1.5,
+    "editor.letterSpacing": 0.2,
+    "editor.fontWeight": 400,
+    //////////////////////
+    // Terminal Font Style
+    //////////////////////
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.fontWeight": "400",
+    "terminal.integrated.fontFamily": "Iosevka Nerd Font Mono",
+    //"terminal.integrated.letterSpacing": 0.4,
+    "terminal.integrated.lineHeight": 1.25,
+    //////////////////////
+    // StatusBar color
+    //////////////////////
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#282a35",
+        "statusBar.debuggingBackground": "#792b2b",
+        "editorRuler.foreground": "#32343f"
+    },
+    //////////////////////
+    // JUPYTER
+    //////////////////////
+    "jupyter.debugJustMyCode": false,
+    "notebook.showCellStatusBar": "visibleAfterExecute",
+    "notebook.lineNumbers": "on",
+    "notebook.markup.fontSize": 18,
+    "jupyter.interactiveWindow.textEditor.autoAddNewCell": false,
+    "notebook.output.lineHeight": 1.5,
+    "notebook.output.fontSize": 16,
+    "notebook.output.fontFamily": "Iosevka, JetBrains Mono, IBM Plex Mono, Menlo, Monaco, 'Courier New', monospace",
+    "notebook.undoRedoPerCell": false,
+    "jupyter.askForKernelRestart": false,
+    "notebook.compactView": false,
+    "notebook.formatOnSave.enabled": true,
+    "notebook.showFoldingControls": "always",
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "[python]": {
+        "editor.formatOnType": true,
+        "editor.formatOnPaste": true,
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        },
+        "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+    "pylint.args": [
+        "--rcfile=pyproject.toml"
+    ],
+    //////////////////////
+    // HTML
+    //////////////////////
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    //////////////////////
+    // Copilot
+    //////////////////////
+    "github.copilot.enable": {
+        "quarto": false,
+        "*": true,
+        "plaintext": true,
+        "markdown": true,
+        "scminput": false,
+        "yaml": true,
+        "python": true,
+        "makefile": true,
+        "django-html": false,
+        "ipynb": true
+    },
+    "editor.stickyScroll.enabled": true,
+    "git.autofetch": true,
+    "git.replaceTagsWhenPull": true,
+    "explorer.confirmDelete": false,
+    "mypy-type-checker.reportingScope": "workspace",
+    "circleci.hostUrl": "",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "*.pdf": "analyticsignal.preview-pdf"
+    },
+    "sonarlint.connectedMode.connections.sonarcloud": [
+        {
+            "organizationKey": "syngenta-digital",
+            "connectionId": "syngenta-digital",
+            "region": "EU"
+        }
+    ],
+    "git.openRepositoryInParentFolders": "never",
+    "git.ignoreRebaseWarning": true,
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "path-intellisense.autoSlashAfterDirectory": true,
+    "path-intellisense.showOnAbsoluteSlash": false,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "[dockercompose]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        },
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "redoclyOpenAPI.user.anonymousId": "63f0736c-a5eb-470b-b59c-40b7942142a1",
+    "[yaml]": {
+        "editor.defaultFormatter": "bluebrown.yamlfmt"
+    },
+    "githubPullRequests.createOnPublishBranch": "never",
+    "copilotInsights.statusBar.showName": true,
+    "copilotInsights.statusBar.showNumericalQuota": true,
+    "copilotInsights.statusBar.showVisualIndicator": true,
+    "copilotInsights.statusBarStyle": "detailed-original",
+    "githubPullRequests.pullBranch": "never",
+    "workbench.productIconTheme": "IntelliJ",
+    "git.suggestSmartCommit": false,
+    "chat.viewSessions.orientation": "stacked",
+    "github.copilot.chat.commitMessageGeneration.instructions": [
+        {
+            "text": "Follow the Conventional Commits specification: <type>[optional scope]: <description>"
+        },
+        {
+            "text": "Use types like feat, fix, docs, style, refactor, perf, test, build, ci, chore, or revert."
+        },
+        {
+            "text": "Keep the subject line under 50 characters and use the imperative mood (e.g., 'add' not 'added')."
+        }
+    ],
+    "chat.agent.maxRequests": 100,
+    "editor.mouseWheelZoom": true,
+    "markdown.preview.fontSize": 18,
+    "markdown.preview.lineHeight": 1.8,
+    "chat.tools.urls.autoApprove": {
+        "https://code.visualstudio.com": true,
+        "https://github.com/microsoft/vscode/wiki/*": true,
+        "https://github.com": {
+            "approveRequest": false,
+            "approveResponse": true
+        },
+        "https://earth-search.aws.element84.com/v1/search": {
+            "approveRequest": false,
+            "approveResponse": true
+        },
+        "https://earth-search.aws.element84.com": {
+            "approveRequest": true,
+            "approveResponse": false
+        },
+        "https://*.streamlit.io": true
+    },
+    "http.systemCertificatesNode": true,
+    "geminicodeassist.project": "predictive-hash-dxnz0",
+    "chat.tools.terminal.autoApprove": {
+        "uv": true,
+        "pip": true
+    },
+    "datadog.connection.oauth.setup.domain": "app.datadoghq.eu",
+    "claudeCode.preferredLocation": "panel",
+    "claudeCode.initialPermissionMode": "plan",
+    "workbench.editor.enablePreview": false,
+    "claudeCode.useCtrlEnterToSend": true,
+    "geminicodeassist.inlineSuggestions.enableAuto": true
+}

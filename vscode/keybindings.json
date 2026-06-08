@@ -1,0 +1,103 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "cmd+k cmd+o",
+        "command": "workbench.action.files.openFolder"
+    },
+    {
+        "key": "cmd+j",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "-workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "shift+cmd+0",
+        "command": "workbench.action.zoomReset"
+    },
+    {
+        "key": "cmd+numpad0",
+        "command": "-workbench.action.zoomReset"
+    },
+    {
+        "key": "shift+cmd+=",
+        "command": "extension.customWindowZoomIn"
+    },
+    {
+        "key": "cmd+9",
+        "command": "-extension.customWindowZoomIn"
+    },
+    {
+        "key": "shift+cmd+-",
+        "command": "extension.customWindowZoomOut"
+    },
+    {
+        "key": "cmd+8",
+        "command": "-extension.customWindowZoomOut"
+    },
+    {
+        "key": "shift+cmd+i",
+        "command": "jupyter.insertCellBelow",
+        "when": "editorTextFocus && jupyter.hascodecells && !jupyter.webExtension && !notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+; b",
+        "command": "-jupyter.insertCellBelow",
+        "when": "editorTextFocus && jupyter.hascodecells && !jupyter.webExtension && !notebookEditorFocused"
+    },
+    {
+        "key": "shift+enter",
+        "command": "jupyter.runcurrentcell",
+        "when": "editorTextFocus && isWorkspaceTrusted && jupyter.hascodecells && !editorHasSelection && !jupyter.havenativecells && !notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "-jupyter.runcurrentcell",
+        "when": "editorTextFocus && isWorkspaceTrusted && jupyter.hascodecells && !editorHasSelection && !jupyter.havenativecells && !notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "jupyter.runcurrentcelladvance",
+        "when": "editorTextFocus && isWorkspaceTrusted && jupyter.hascodecells && !editorHasSelection && !notebookEditorFocused"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-jupyter.runcurrentcelladvance",
+        "when": "editorTextFocus && isWorkspaceTrusted && jupyter.hascodecells && !editorHasSelection && !notebookEditorFocused"
+    },
+    {
+        "key": "left",
+        "command": "-notebook.fold",
+        "when": "notebookEditorFocused && !inputFocus && activeEditor == 'workbench.editor.notebook'"
+    },
+    {
+        "key": "right",
+        "command": "-notebook.unfold",
+        "when": "notebookEditorFocused && !inputFocus && activeEditor == 'workbench.editor.notebook'"
+    },
+    {
+        "key": "shift+cmd+=",
+        "command": "editor.action.fontZoomIn"
+    },
+    {
+        "key": "shift+cmd+-",
+        "command": "editor.action.fontZoomOut"
+    },
+    {
+        "key": "shift+cmd+0",
+        "command": "editor.action.fontZoomReset"
+    },
+    {
+        "key": "cmd+j",
+        "command": "workbench.action.terminal.focus",
+        "when": "accessibilityModeEnabled && accessibleViewOnLastLine && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewOnLastLine && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
+    },
+    {
+        "key": "cmd+down",
+        "command": "-workbench.action.terminal.focus",
+        "when": "accessibilityModeEnabled && accessibleViewOnLastLine && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewOnLastLine && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
+    }
+]
