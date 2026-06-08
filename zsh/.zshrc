@@ -42,3 +42,6 @@ eval "$(pyenv init - zsh)"
 # FZF
 eval "$(fzf --zsh)"
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
+
+# STARSHIP
+eval "$(starship init zsh)"
