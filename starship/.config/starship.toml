@@ -11,10 +11,9 @@ $git_status\
 $line_break\
 $character\
 """
-right_format = """$all"""
+right_format = """${custom.python_ver}$package"""
 
 [directory]
-style = "teal"
 format = "[ $path ]($style)"
 truncation_length = 4
 read_only = " 󰌾"
@@ -31,6 +30,7 @@ vimcmd_symbol = "[:](bold fg:yellow)"
 [package]
 disabled = false
 symbol = "󰏗 "
+format = "[󰏗 $version]($style) "
 
 [git_branch]
 symbol = " "
@@ -311,7 +311,15 @@ symbol = " "
 symbol = " "
 
 [python]
+disabled = true
 symbol = " "
+
+[custom.python_ver]
+command = "cat .python-version 2>/dev/null || cat ~/.pyenv/version 2>/dev/null"
+when = "test -f .python-version || test -f ~/.pyenv/version"
+symbol = " "
+format = "[$symbol$output ]($style)"
+style = "yellow"
 
 [raku]
 symbol = "󱖊 "
