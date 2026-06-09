@@ -1,1 +1,5 @@
-theme = Dracula 
+theme = Dracula
+notify-on-command-finish = unfocused
+window-padding-x = 4
+quit-after-last-window-closed = true
+macos-titlebar-proxy-icon = hidden
