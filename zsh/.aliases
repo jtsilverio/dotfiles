@@ -1,2 +1,8 @@
-# Python virtualenv
 alias activate="source .venv/bin/activate"
+alias reload="source ~/.zshrc"
+alias path="echo $PATH | tr ':' '\n'"   # readable PATH
+alias c="clear"
+alias localip="ipconfig getifaddr en0"
+alias pubip="curl -s ifconfig.me"
+alias glog="git log --oneline --graph --decorate"
+alias grep="grep --color=auto"

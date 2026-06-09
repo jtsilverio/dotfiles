@@ -1,5 +1,6 @@
-# USER CONFIGS
-alias activate="source .venv/bin/activate"
+# ALIASES
+[[ -f ~/.aliases ]] && source ~/.aliases
+[[ -f ~/.aliases.local ]] && source ~/.aliases.local
 
 # ZSH
 # Path to your Oh My Zsh installation.

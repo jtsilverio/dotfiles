@@ -20,6 +20,7 @@ unvscode:
 init-local:
 	cp -n ~/.zshrc.local.template ~/.zshrc.local || true
 	cp -n ~/.zprofile.local.template ~/.zprofile.local || true
+	cp -n ~/.aliases.local.template ~/.aliases.local || true
 
 bootstrap:
 	brew install fzf fd
