@@ -3,3 +3,5 @@ notify-on-command-finish = unfocused
 window-padding-x = 4
 quit-after-last-window-closed = true
 macos-titlebar-proxy-icon = hidden
+font-family = Iosevka Nerd Font Mono
+font-size = 15

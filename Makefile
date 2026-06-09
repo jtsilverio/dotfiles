@@ -1,10 +1,10 @@
-.PHONY: stow unstow vscode unvscode bootstrap
+.PHONY: stow unstow vscode unvscode bootstrap init-local
 
 VSCODE_DIR := $(HOME)/Library/Application Support/Code/User
 
 STOW_PKGS := $(shell ls -d */ | grep -v '^vscode/')
 
-stow:
+stow: bootstrap init-local
 	stow -t ~ $(STOW_PKGS)
 
 unstow:
@@ -16,6 +16,10 @@ vscode:
 
 unvscode:
 	rm -f "$(VSCODE_DIR)/settings.json" "$(VSCODE_DIR)/keybindings.json"
+
+init-local:
+	cp -n ~/.zshrc.local.template ~/.zshrc.local || true
+	cp -n ~/.zprofile.local.template ~/.zprofile.local || true
 
 bootstrap:
 	brew install fzf fd

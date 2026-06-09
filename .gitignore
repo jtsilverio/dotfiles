@@ -3,3 +3,6 @@
 Thumbs.db
 .bundle
 **/.claude/settings.local.json
+.zshsecrets
+.zshprofile.local
+.zshrc.local
