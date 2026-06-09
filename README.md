@@ -15,12 +15,10 @@ brew install stow
 Clone the repo and apply all packages:
 
 ```sh
-git clone --recurse-submodules https://github.com/jtsilverio/dotfiles ~/code/dotfiles
+git clone https://github.com/jtsilverio/dotfiles ~/code/dotfiles
 cd ~/code/dotfiles
 make stow
 ```
-
-> `--recurse-submodules` is needed to pull the Ghostty Dracula theme.
 
 ### Uninstall
 
