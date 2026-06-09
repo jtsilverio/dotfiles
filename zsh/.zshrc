@@ -30,10 +30,6 @@ HIST_STAMPS="yyyy-mm-dd"
 # ZSH_CUSTOM=/path/to/new-custom-folder
 source $ZSH/oh-my-zsh.sh
 
-# Created by `pipx` on 2026-01-30 16:32:42
-export PATH="$PATH:$HOME/.local/bin"
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init - zsh)"
 
 # LOCAL ENV
@@ -41,7 +37,6 @@ eval "$(pyenv init - zsh)"
 
 # FZF
 eval "$(fzf --zsh)"
-export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 
 # STARSHIP
 eval "$(starship init zsh)"
