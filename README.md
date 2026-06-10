@@ -28,11 +28,12 @@ make unstow
 
 ## Local overrides
 
-Git supports a local config file for machine-specific settings (email, signing key, etc.) that is not committed to the repo:
+Machine-specific config that shouldn't be committed lives in `.local` files. Run `make init-local` to create them from the provided templates:
 
 ```sh
-# ~/.gitconfig.local
-[user]
-  name = Your Name
-  email = your@email.com
+make init-local
 ```
+
+## Aliases
+
+All shared aliases live in `zsh/.aliases` (symlinked to `~/.aliases`). Machine-specific aliases go in `~/.aliases.local`, which is sourced automatically but never committed.
